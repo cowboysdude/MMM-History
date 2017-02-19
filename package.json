@@ -1,0 +1,23 @@
+{
+  "name": "mmm-history",
+  "version": "1.0.0",
+  "description": "This day in History module for MM2",
+  "main": "MMM-History.js",
+  "dependencies": {
+    "request": "^2.79.0",
+    "xml2js": "^0.4.17"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cowboysdude/MMM-History.git"
+  },
+  "author": "Cowboysdude",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cowboysdude/MMM-History/issues"
+  },
+  "homepage": "https://github.com/cowboysdude/MMM-History#readme"
+}
