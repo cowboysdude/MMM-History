@@ -34,13 +34,12 @@ Module.register("MMM-History", {
            
            // Set locale.
            this.url = "http://feeds.feedburner.com/day/MNbM?format=xml";
-           this.history = null;
+           this.history = {};
            this.today = "";
            this.activeItem = 0;
            this.rotateInterval = null;
            this.scheduleUpdate();
        },
-       
        
 
       getDom: function() {
@@ -63,7 +62,7 @@ Module.register("MMM-History", {
 			}
          var history = this.history[hkeys[this.activeItem]];
 		
-        var top = document.createElement("div");
+         var top = document.createElement("div");
          top.classList.add("content");
 
          var hitem = document.createElement("p");
@@ -72,9 +71,8 @@ Module.register("MMM-History", {
          top.appendChild(hitem);
 
          wrapper.appendChild(top);
-         return wrapper;
-
          }
+         return wrapper;
      },
      
      processHistory: function(data) {
