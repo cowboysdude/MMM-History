@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
-
 .MMM-History .header {
 	text-align: center;
-	font-family: 'Oswald', sans-serif;
-	font-size: 14px;
-	color: #94e7e9;
 }
 .MMM-History .content {
   width: 100%;
