@@ -45,23 +45,23 @@ Module.register("MMM-History", {
       getDom: function() {
          
          var history = this.history;
-         
+
          var wrapper = document.createElement("div");
          wrapper.className = "wrapper";
          wrapper.style.maxWidth = this.config.maxWidth;
          
          var header = document.createElement("header");
-         header.className = "header";
+         header.classList.add("small", "bright", "header");
          header.innerHTML = "Today in History  " + moment().format('MM/DD/YYYY');
          wrapper.appendChild(header);
          
-          var hkeys = Object.keys(history);
+          var hkeys = Object.keys(this.history);
 			if(hkeys.length > 0){
            	if(this.activeItem >= hkeys.length){
 				this.activeItem = 0;
 			}
          var history = this.history[hkeys[this.activeItem]];
-		
+
          var top = document.createElement("div");
          top.classList.add("content");
 
@@ -77,7 +77,7 @@ Module.register("MMM-History", {
      
      processHistory: function(data) {
          this.today = data.Today;
-         this.history = data.item;
+         this.history = data;
          this.loaded = true;
      },
      
@@ -111,5 +111,4 @@ Module.register("MMM-History", {
          }
          this.updateDom(this.config.initialLoadDelay);
      },
-
  });
