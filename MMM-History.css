@@ -1,6 +1,9 @@
 .MMM-History .header {
 	text-align: center;
 }
+.MMM-History .title {
+	text-align: center;
+}
 .MMM-History .content {
   width: 100%;
   background-position: 11px 0;
