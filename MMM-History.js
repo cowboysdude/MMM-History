@@ -66,7 +66,7 @@ Module.register("MMM-History", {
          top.classList.add("content");
 
          var hitem = document.createElement("p");
-         hitem.classList.add("xsmall", "bright");
+         hitem.classList.add("xsmall", "bright", "title");
          hitem.innerHTML = history.title;
          top.appendChild(hitem);
 
