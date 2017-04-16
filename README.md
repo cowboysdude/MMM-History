@@ -18,6 +18,7 @@ config.js
             position: 'bottom_bar',
             config: {
             maxWidth: "300px"
+            }
          },
         
 maxWidth can be set to either px or %
