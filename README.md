@@ -4,10 +4,10 @@
 Examples
   
  MagicMirror/modules
- [](Capture.jpg)
+ ![](Capture.jpg)
   
  git clone https://github.com/cowboysdude/MMM-History
- [](Capture2.jpg)
+ ![](Capture2.jpg)
   
  # Installation
   
