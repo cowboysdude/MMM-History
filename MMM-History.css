@@ -10,33 +10,6 @@
   background-repeat: no-repeat;
   color: #fe0127;
 }
-.MMM-History .imgDes {
-  width: 16%;
-  height: 16%;
-  margin-left: 5px;
-  margin-right: 5px;
-  overflow: hidden;
-  float: left;
-}
-.MMM-History .imgDesInv {
-  width: 16%;
-  height: 16%;
-  margin-left: 5px;
-  margin-right: 5px;
-  overflow: hidden;
-  float: left;
-  color: #fff;
-   -webkit-filter: invert(100%);
-    filter: invert(100%);
-}
 .MMM-History .wrapper {
 	text-align: justify
-}
-.MMM-History .imgDes p {
-  font-size: 12px;
-  text-align: left;
-  padding-bottom: 15px;
-}
-h3:first-letter {
-    text-transform:capitalize;
 }
