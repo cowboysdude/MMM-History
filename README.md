@@ -10,18 +10,11 @@ Examples
  ![](Capture2.jpg)
   
  # Installation
-  
+     ~MagicMirror/modules
+     `git clone https://github.com/cowboysdude/MMM-History.git`
      cd
-    ~MagicMirror/modules/MMM-History
-    run - npm install
-    Clone this repo into your ~MagicMirror/modules directory.
-  
- #config.js
- `git clone https://github.com/cowboysdude/MMM-History.git`
- 
- Then `cd MMM-History`
- 
- run - `npm install` in your `~MagicMirror/modules/MMM-History` directory.
+      ~MagicMirror/modules/MMM-History
+      run - npm install
  
  # Add to Config.js
   
