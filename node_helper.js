@@ -7,8 +7,6 @@
 const NodeHelper = require('node_helper');
 const request = require('request');
 const parser = require('xml2js').parseString;
-const fs = require('fs');
-
 
 module.exports = NodeHelper.create({
 	  
@@ -24,7 +22,7 @@ module.exports = NodeHelper.create({
             if (!error && response.statusCode === 200) {
                 parser(body, (err, result)=> {
                     if(result.hasOwnProperty('rss')){
-                        var result = JSON.parse(JSON.stringify(result.rss.channel[0]));
+                        var result = JSON.parse(JSON.stringify(result.rss.channel[0].item));
                         this.sendSocketNotification("HISTORY_RESULT", result);
                     }
                 });
