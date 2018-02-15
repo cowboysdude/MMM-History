@@ -17,8 +17,8 @@ Module.register("MMM-History", {
            retryDelay: 1500,
            maxWidth: "400px",
            fadeSpeed: 11,
-           rotateInterval: 20 * 1000
-           
+           rotateInterval: 20 * 1000,
+           maxLength: null
        },
        
        // Define required scripts.
@@ -107,7 +107,11 @@ Module.register("MMM-History", {
 
          var hitem = document.createElement("p");
          hitem.classList.add("xsmall", "bright", "title");
-         hitem.innerHTML = history.title;
+		 if (this.config.maxLength && this.config.maxLength < history.title.toString().length) {
+			hitem.innerHTML = history.title.toString().substring(0, this.config.maxLength) + "\u2026";			 
+		 } else {
+			hitem.innerHTML = history.title;
+		}
          top.appendChild(hitem);
 
          wrapper.appendChild(top);
