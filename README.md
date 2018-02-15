@@ -28,5 +28,6 @@ Examples
           
  
     maxWidth:` can be set to either px or %
+    maxLength:` can be set to any number to truncate text after x characters    
   
   Restart mirror... enjoy...  
