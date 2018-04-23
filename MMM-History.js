@@ -37,6 +37,7 @@ Module.register("MMM-History", {
            requiresVersion: "2.1.0",
            
            // Set locale.
+           this.locale = window.navigator.userLanguage || window.navigator.language;
            this.url = "http://feeds.feedburner.com/day/MNbM?format=xml";
            this.history = {};
            this.today = "";
@@ -85,6 +86,7 @@ Module.register("MMM-History", {
       getDom: function() {
          
          var history = this.history;
+         moment.locale(this.locale);
 
          var wrapper = document.createElement("div");
          wrapper.className = "wrapper";
@@ -92,7 +94,7 @@ Module.register("MMM-History", {
          
          var header = document.createElement("header");
          header.classList.add("xsmall", "bright", "header");
-         header.innerHTML = "Today in History  " + moment().format('MM/DD/YYYY');
+         header.innerHTML = "Today in History  " + moment().format('L');
          wrapper.appendChild(header);
          
           var hkeys = Object.keys(this.history);
