@@ -18,7 +18,8 @@ Module.register("MMM-History", {
            maxWidth: "400px",
            fadeSpeed: 11,
            rotateInterval: 20 * 1000,
-           maxLength: null
+           maxLength: null,
+	   headerDateFormat: "L"
        },
        
        // Define required scripts.
@@ -94,7 +95,7 @@ Module.register("MMM-History", {
          
          var header = document.createElement("header");
          header.classList.add("xsmall", "bright", "header");
-         header.innerHTML = "Today in History  " + moment().format('L');
+         header.innerHTML = "Today in History  " + moment().format(this.config.headerDateFormat);
          wrapper.appendChild(header);
          
           var hkeys = Object.keys(this.history);
